@@ -1,0 +1,98 @@
+Date : 2024-07-29 23:36:21
+Directory : e:\Competition\ChuangXinBei\face\Face_recognition
+Total : 58 files,  53440 codes, 821 comments, 1418 blanks, all 55679 lines
+
+Languages
++--------------+------------+------------+------------+------------+------------+
+| language     | files      | code       | comment    | blank      | total      |
++--------------+------------+------------+------------+------------+------------+
+| XML          |          2 |     47,558 |        138 |          2 |     47,698 |
+| Python       |         33 |      5,110 |        565 |      1,239 |      6,914 |
+| YAML         |         19 |        723 |         96 |        161 |        980 |
+| Shell Script |          2 |         35 |         12 |          8 |         55 |
+| Docker       |          1 |          9 |         10 |          7 |         26 |
+| JSON         |          1 |          5 |          0 |          1 |          6 |
++--------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                      | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                         |         58 |     53,440 |        821 |      1,418 |     55,679 |
+| . (Files)                                                                                                 |          6 |        392 |         59 |         68 |        519 |
+| Live_Detection                                                                                            |          4 |        966 |         36 |        269 |      1,271 |
+| face_feature_detect                                                                                       |          2 |     47,558 |        138 |          2 |     47,698 |
+| models                                                                                                    |         27 |      1,898 |        188 |        431 |      2,517 |
+| models (Files)                                                                                            |         13 |      1,330 |        112 |        305 |      1,747 |
+| models\hub                                                                                                |         14 |        568 |         76 |        126 |        770 |
+| utils                                                                                                     |         19 |      2,626 |        400 |        648 |      3,674 |
+| utils (Files)                                                                                             |         10 |      2,259 |        369 |        579 |      3,207 |
+| utils\aws                                                                                                 |          4 |         60 |         16 |         18 |         94 |
+| utils\google_app_engine                                                                                   |          2 |         20 |         10 |         10 |         40 |
+| utils\wandb_logging                                                                                       |          3 |        287 |          5 |         41 |        333 |
++-----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------------------------------+--------------+------------+------------+------------+------------+
+| filename                                                                                                  | language     | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------------------------------+--------------+------------+------------+------------+------------+
+| e:\Competition\ChuangXinBei\face\Face_recognition\Baidu_keys.json                                         | JSON         |          5 |          0 |          1 |          6 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\Client_Application.py                                   | Python       |        106 |         22 |         11 |        139 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\Database_init.py                                        | Python       |         17 |          0 |          2 |         19 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\Face_Register.py                                        | Python       |         54 |          2 |          6 |         62 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\Live_Detection\detect.py                                | Python       |         34 |          4 |          1 |         39 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\Live_Detection\functional.py                            | Python       |        442 |         16 |        131 |        589 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\Live_Detection\model.py                                 | Python       |        229 |          9 |         58 |        296 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\Live_Detection\transform.py                             | Python       |        261 |          7 |         79 |        347 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\Server_Application.py                                   | Python       |         76 |         18 |         20 |        114 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\detect.py                                               | Python       |        134 |         17 |         28 |        179 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\face_feature_detect\haarcascade_frontalcatface.xml      | XML          |     14,287 |         95 |          1 |     14,383 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\face_feature_detect\haarcascade_frontalface_default.xml | XML          |     33,271 |         43 |          1 |     33,315 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\__init__.py                                      | Python       |          0 |          0 |          1 |          1 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\common.py                                        | Python       |        280 |         35 |         72 |        387 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\experimental.py                                  | Python       |         97 |         12 |         26 |        135 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\export.py                                        | Python       |         74 |         13 |         18 |        105 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\faceboxes.py                                     | Python       |        184 |          1 |         50 |        235 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\facenet.py                                       | Python       |         91 |          0 |         13 |        104 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\anchors.yaml                                 | YAML         |         37 |         11 |         11 |         59 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov3-spp.yaml                              | YAML         |         40 |          5 |          7 |         52 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov3-tiny.yaml                             | YAML         |         31 |          5 |          6 |         42 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov3.yaml                                  | YAML         |         40 |          5 |          7 |         52 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov5-fpn.yaml                              | YAML         |         31 |          5 |          7 |         43 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov5-p2.yaml                               | YAML         |         40 |          5 |         10 |         55 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov5-p6.yaml                               | YAML         |         42 |          5 |         10 |         57 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov5-p7.yaml                               | YAML         |         51 |          5 |         12 |         68 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov5-panet.yaml                            | YAML         |         36 |          5 |          8 |         49 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov5l6.yaml                                | YAML         |         46 |          5 |         10 |         61 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov5m6.yaml                                | YAML         |         46 |          5 |         10 |         61 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov5s-transformer.yaml                     | YAML         |         36 |          5 |          8 |         49 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov5s6.yaml                                | YAML         |         46 |          5 |         10 |         61 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\hub\yolov5x6.yaml                                | YAML         |         46 |          5 |         10 |         61 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\inception_resnetv1.py                            | Python       |        192 |          0 |         41 |        233 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\mobilenet.py                                     | Python       |         55 |          7 |         11 |         73 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\yolo.py                                          | Python       |        213 |         24 |         41 |        278 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\yolov5l.yaml                                     | YAML         |         36 |          5 |          8 |         49 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\yolov5m.yaml                                     | YAML         |         36 |          5 |          8 |         49 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\yolov5s.yaml                                     | YAML         |         36 |          5 |          8 |         49 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\models\yolov5x.yaml                                     | YAML         |         36 |          5 |          8 |         49 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\__init__.py                                       | Python       |          0 |          0 |          1 |          1 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\activations.py                                    | Python       |         49 |          5 |         19 |         73 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\autoanchor.py                                     | Python       |        117 |         20 |         24 |        161 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\aws\__init__.py                                   | Python       |          0 |          0 |          1 |          1 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\aws\mime.sh                                       | Shell Script |         15 |          6 |          6 |         27 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\aws\resume.py                                     | Python       |         25 |          4 |          9 |         38 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\aws\userdata.sh                                   | Shell Script |         20 |          6 |          2 |         28 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\datasets.py                                       | Python       |        760 |        116 |        189 |      1,065 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\general.py                                        | Python       |        420 |         69 |        116 |        605 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\google_app_engine\Dockerfile                      | Docker       |          9 |         10 |          7 |         26 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\google_app_engine\app.yaml                        | YAML         |         11 |          0 |          3 |         14 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\google_utils.py                                   | Python       |         72 |         33 |         18 |        123 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\loss.py                                           | Python       |        147 |         28 |         42 |        217 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\metrics.py                                        | Python       |        160 |         21 |         43 |        224 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\plots.py                                          | Python       |        322 |         43 |         69 |        434 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\torch_utils.py                                    | Python       |        212 |         34 |         58 |        304 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\wandb_logging\__init__.py                         | Python       |          0 |          0 |          1 |          1 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\wandb_logging\log_dataset.py                      | Python       |         16 |          0 |          9 |         25 |
+| e:\Competition\ChuangXinBei\face\Face_recognition\utils\wandb_logging\wandb_utils.py                      | Python       |        271 |          5 |         31 |        307 |
+| Total                                                                                                     |              |     53,440 |        821 |      1,418 |     55,679 |
++-----------------------------------------------------------------------------------------------------------+--------------+------------+------------+------------+------------+

@@ -1,13 +1,20 @@
+import time
 import requests
 import cv2
 import base64
 import json
+import argparse
+from aip import AipFace
+
+APP_ID='98371847'
+API_KEY='8RX7sfPpcJCzsp8xSE6c04pk'
+SECRET_KEY='MQ36xDa2ihJFOuMHRhgNVH95IzCuHiA2'
 
 PROTOTXT_PATH='./deploy_prototxt.txt'
 MODEL_PATH='./models/res10_300x300_ssd_iter_140000_fp16.caffemodel'
 model = cv2.dnn.readNetFromCaffe(PROTOTXT_PATH, MODEL_PATH)
 def run():
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(args.video_device)
     while True:
         ret, frame = cap.read()
         if not ret:
@@ -26,6 +33,49 @@ def run():
             print('None')
         # 展示视频画面
         cv2.imshow('video capture', frame)
+        key = cv2.waitKey(10) & 0xff
+        if key == 27:
+            cap.release()
+            cv2.destroyAllWindows()
+            break
+
+
+
+
+def run_Baidu():
+    cap=cv2.VideoCapture(args.video_device)
+    client=AipFace(APP_ID, API_KEY, SECRET_KEY)
+    imageType = "BASE64"
+    groupIdList=args.room
+    options={
+        'liveness_control':'NORMAL',
+        'match_threshold':70
+    }   
+    while True:
+        ret,frame=cap.read()
+        frame = cv2.flip(frame, 1)
+        # face_exist,face_ROI=Get_Face(frame)
+        
+        img_base64=image_to_base64(frame)
+        response=client.multiSearch(img_base64,imageType,groupIdList,options)
+        # print(response)
+        
+        if response["error_msg"]=='SUCCESS':
+            result=response['result']
+            face=result['face_list'][0]
+            if face:
+                x=int(face["location"]['left'])
+                y=int(face["location"]['top'])
+                w=int(face["location"]['width'])
+                h=int(face["location"]['height'])
+                cv2.rectangle(frame,(x,y),(x+w,y+h),color=(255,0,0),thickness=2)
+                print(f"Name:{face['user_list'][0]['user_info']} Score:{face['user_list'][0]['score']:.2f}")
+            else:
+                print('Name:Unknown')
+        else:
+            print(f'Request API failed!\nErro:{response["error_msg"]}')
+        cv2.imshow('video capture', frame)
+        time.sleep(1)
         key = cv2.waitKey(10) & 0xff
         if key == 27:
             cap.release()
@@ -99,6 +149,13 @@ def detect_face(face):
     return response.json()
 
 
-
+parser=argparse.ArgumentParser()
+parser.add_argument('-m',dest='mode',type=int,default=1,help='0/1 Baidu-api or Server-api')
+parser.add_argument('-vd',dest='video_device',type=int,default=0,help='video device number')
+parser.add_argument('-r',dest='room',type=str,help='room id e.g. 08_1803B ->(栋号)_(寝室号)')
+args=parser.parse_args()
 if __name__ == '__main__':
-    run()
+    if args.mode:
+        run()
+    else:
+        run_Baidu()

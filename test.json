@@ -1,0 +1,30 @@
+{
+    "error_code": 0,
+    "error_msg": "SUCCESS",
+    "log_id": 773336715,
+    "timestamp": 1722268070,
+    "cached": 0,
+    "result": {
+        "face_num": 1,
+        "face_list": [
+            {
+                "face_token": "6651f8ee1f711734e4268c9727ec154b",
+                "location": {
+                    "left": 209.77,
+                    "top": 272.44,
+                    "width": 189,
+                    "height": 191,
+                    "rotation": 0
+                },
+                "user_list": [
+                    {
+                        "group_id": "08_1803B",
+                        "user_id": "ljj",
+                        "user_info": "凌建杰",
+                        "score": 92.7327651977539
+                    }
+                ]
+            }
+        ]
+    }
+}
