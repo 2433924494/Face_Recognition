@@ -40,7 +40,9 @@ def run():
 
 def run_Baidu():
     cap=cv2.VideoCapture(args.video_device)
-    client=AipFace(APP_ID, API_KEY, SECRET_KEY)
+    with open('../Baidu_keys.json','r') as fp:
+        keys=json.load(fp)
+    client=AipFace(keys['APP_ID'],keys['API_KEY'],keys['SECRET_KEY'])
     imageType = "BASE64"
     groupIdList=args.room
     options={

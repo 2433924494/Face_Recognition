@@ -19,7 +19,7 @@ parse.add_argument('-un',dest='user_name',type=str,help='user name')
 args=parse.parse_args()
 
 def add_face():
-    with open('./Baidu_keys.json','r') as fp:
+    with open('../Baidu_keys.json','r') as fp:
         keys=json.load(fp)
     client=AipFace(keys['APP_ID'],keys['API_KEY'],keys['SECRET_KEY'])
     image=image_to_base64(cv2.imread(args.image))
