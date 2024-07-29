@@ -6,10 +6,6 @@ import json
 import argparse
 from aip import AipFace
 
-APP_ID='98371847'
-API_KEY='8RX7sfPpcJCzsp8xSE6c04pk'
-SECRET_KEY='MQ36xDa2ihJFOuMHRhgNVH95IzCuHiA2'
-
 PROTOTXT_PATH='./deploy_prototxt.txt'
 MODEL_PATH='./models/res10_300x300_ssd_iter_140000_fp16.caffemodel'
 model = cv2.dnn.readNetFromCaffe(PROTOTXT_PATH, MODEL_PATH)
