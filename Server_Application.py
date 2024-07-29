@@ -19,7 +19,7 @@ import numpy as np
 import io
 import base64
 import Live_Detection.detect as LD
-from iresnet import iresnet50
+
 
 app = FastAPI()
 device = select_device('')
@@ -41,8 +41,6 @@ class Image(BaseModel):
     img: str
 
 
-# net = iresnet50()
-# net.load_state_dict(torch.load('./backbone.pth',map_location=torch.device('cpu')))
 net=Facenet('mobilenet',mode='predict').eval()
 net.load_state_dict(torch.load('./models/facenet_mobilenet.pth',map_location=torch.device('cpu')),strict=False)
 net.eval()
