@@ -1,0 +1,11 @@
+baidu_aip==4.16.13
+fastapi==0.111.1
+numpy==1.24.3
+opencv_contrib_python==4.10.0.84
+opencv_python==4.9.0.80
+Pillow==10.4.0
+pydantic==2.8.2
+Requests==2.32.3
+torch==2.3.1
+uvicorn==0.30.3
+urllib3==2.2.1
